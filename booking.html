@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="noshtuvki v gabrovo, Нощувки в Габрово, Apartamenti, Апартаменти в Габрово, Къща за гости, Габрово, Стаи в Габрово">
+    <title>Резервации| Върбанови</title>
+    <link rel="stylesheet" href="hotel.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+                <nav class="nav">
+                    <a href="hotel.html" class="logo">
+                         <img src="./images/logo.png" alt="Стаи за гости Габрово - Апартаменти и къща за гости Върбанови, нощувки Габрово, стаи за гости, къща за гости под наем">
+                    </a>
+                </p>
+                <div class="hamburger-menu" onclick="myFunction(this)">
+                  <div class="bar1"></div>
+                  <div class="bar2"></div>
+                  <div class="bar3"></div>
+                </div>
+
+                    <ul class="nav-list">
+                        <li class= "nav-item">
+                            <a href="hotel.html" class="nav-link">Начало</a>
+                        </li>
+                        <li class= "nav-item">
+                            <a href="gallery.html" class="nav-link">Галерия</a>
+                        </li>
+                        <li class= "nav-item">
+                          <a href="news.html" class="nav-link">Новини</a>
+                      </li>
+                        <li class= "nav-item">
+                            <a href="contacts.html" class="nav-link">Контакти</a>
+                        </li>
+                        <li class= "nav-item">
+                            <a href="booking.html" class="nav-link">Резервация</a>
+                        </li>
+                    </ul>
+                </nav>
+        </div>
+    </header>
+    <main>
+        <h1 class="bookingform">Форма за резервация</h1>
+        <div id="place">" " </div>
+        <div class="linia" id="place"> ""</div>
+        <h2 class="bookingformsubtittlefirst">Форма за запитване за свободни места.</h2>
+        <br>
+        <h2 class="bookingformsubtittle">Попълването и изпращането резервационната форма не е равносилно на резервация.
+        </h2>
+        <br>
+        <h2 class="bookingformsubtittle">Резервацията е нужно да бъде потвърдена от хотела и да бъде платен аванс.
+        </h2>
+        <br>
+        <form action="reservation" method="post" class="booking">
+            <div class="elem-group">
+              <label id= "forminfo" for="name">Име</label>
+              <input type="text" id="name" name="visitor_name" placeholder="Вашето име тук" pattern=[A-Z\sa-z\А-Я\а-я]{3,20} required>
+            </div>
+            <div class="elem-group">
+                <label id= "forminfo" for="name">Фамилия</label>
+                <input type="text" id="name" name="visitor_name" placeholder="Вашата фамилия тук" pattern=[A-Z\sa-z\А-Я\а-я]{3,20} required>
+              </div>
+            <div class="elem-group">
+              <label id= "forminfo" for="email">Имейл</label>
+              <input type="email" id="email" name="visitor_email" placeholder="Вашият имейл тук" required>
+            </div>
+            <div class="elem-group">
+              <label id= "forminfo" for="phone">Телефонен номер</label>
+              <input type="tel" id="phone" name="visitor_phone" placeholder="Телефонен номер" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+            </div> 
+            <hr>
+            <div class="elem-group inlined">
+                <span> 
+              <label id= "forminfo" for="adult">Възрастни</label>
+              <input type="number" id="inputData" name="total_adults" placeholder="2" min="1" required>
+              <label id= "forminfo" for="child">Деца</label>
+              <input type="number" id="inputData" name="total_children" placeholder="1" min="0" required>
+            </span>
+            </div>
+            <div class="elem-group inlined">
+              <label id= "forminfo" for="checkin-date">Дата за пристигане</label>
+              <input type="date" id="checkin-date" name="checkin" required>
+            </div>
+            <div class="elem-group inlined">
+              <label id= "forminfo" for="checkout-date">Дата за заминаване</label>
+              <input type="date" id="checkout-date" name="checkout" required>
+            </div>
+            <div class="elem-group">
+              <label id= "forminfo" for="room-selection">Изберете апартамент</label>
+              <select id="inputData" name="room_preference" required>
+                  <option id= "forminfo" value="">Изберете апартамент от списъка</option>
+                  <option id= "forminfo" value="connecting">Апартамент 1</option>
+                  <option id= "forminfo" value="adjoining">Апартамент 2</option>
+                  <option id= "forminfo" value="adjacent">Kъща</option>
+              </select>
+            </div>
+            <hr>
+            <div class="elem-group">
+              <label id= "forminfo" for="message">Бележки</label>
+              <textarea id="inputData" name="visitor_message" placeholder="Бележки и допълнителни запитвания:"></textarea>
+            </div>
+            <button type="submit">Направи заявка</button>
+          </form>   
+</main>
+<footer class="footer">
+  <div class="container">
+      <div class="footer-content">
+          <div class="footer-content-brand">
+              <a href="hotel.html" class="logo">
+                  <img src="./images/logo.png" class="logo-image" alt="">
+              </a>
+              <div class="footer-heading">
+                  <ul id="footer-nav">
+                      <li><a href="./hotel.html">Начало</a></li>
+                      <li><a href="./gallery.html">Галерия</a></li>
+                      <li><a href="./news.html">Новини</a></li>
+                      <li><a href="./contacts.html">Контакти</a></li>
+                      <li><a href="./booking.html">Резервация</a></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="social-media-wrap">
+              <h4 class="footer-heading">Последвайте ни!</h4> 
+                <ul id="social-media">
+                  <li><a href="https://www.twitter.com/"><img class="icon" src="./images/twitter.png" alt=""></a></li>
+                  <li><a href="https://facebook.com/"><img class="icon" src="./images/facebook.png" alt=""></a></li>
+                  <li><a href="https://www.instagram.com/"><img class="icon" src="./images/instagram.png" alt=""></a></li>
+                  <li><a href="https://mail.google.com/"><img class="icon" src="./images/email.png" alt=""></a></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+  <div class="copyright"> 
+      <p>&copy;2023 - Апартаменти по наем Върбанови</p>
+  </div>
+</footer>
+<script src="hotel.js"></script>
+</body>
+</html>

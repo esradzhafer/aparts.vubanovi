@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="noshtuvki v gabrovo, Нощувки в Габрово, Apartamenti, Апартаменти в Габрово, Къща за гости, Габрово, Стаи в Габрово">
+    <title>Контакти| Върбанови</title>
+    <link rel="stylesheet" href="hotel.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+                <nav class="nav">
+                    <a href="hotel.html" class="logo">
+                         <img src="./images/logo.png" alt="Стаи за гости Габрово - Апартаменти и къща за гости Върбанови, нощувки Габрово, стаи за гости, къща за гости под наем">
+                    </a>
+                </p>
+                <div class="hamburger-menu" onclick="myFunction(this)">
+                  <div class="bar1"></div>
+                  <div class="bar2"></div>
+                  <div class="bar3"></div>
+                </div>
+
+                    <ul class="nav-list">
+                        <li class= "nav-item">
+                            <a href="hotel.html" class="nav-link">Начало</a>
+                        </li>
+                        <li class= "nav-item">
+                            <a href="gallery.html" class="nav-link">Галерия</a>
+                        </li>
+                        <li class= "nav-item">
+                            <a href="news.html" class="nav-link">Новини</a>
+                        </li>
+                        <li class= "nav-item">
+                            <a href="contacts.html" class="nav-link">Контакти</a>
+                        </li>
+                        <li class= "nav-item">
+                            <a href="booking.html" class="nav-link">Резервация</a>
+                        </li>
+                    </ul>
+                </nav>
+        </div>
+    </header>
+    <main>
+
+        <div class="google-maps">
+            <iframe width="425" height="300" frameborder="0" scrolling="none" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1461.8066833922144!2d25.31720313332842!3d42.88100410472804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a91aa2a1786033%3A0xd95d0b48c504fb28!2z0YPQuy4g4oCe0JTQvtC60YLQvtGAINCb0Y7QtNCy0LjQuiDQl9Cw0LzQtdC90YXQvtGE4oCcIDjQkSwgNTMwNiDQk9Cw0LHRgNC-0LLQviDQptC10L3RgtGK0YAsINCT0LDQsdGA0L7QstC-!5e0!3m2!1sbg!2sbg!4v1673355698240!5m2!1sbg!2sbg" ></iframe>
+        </div>
+        <h1 class="contactstittle">Контакти</h1>
+        <div id="place">" " </div>
+        <div class="linia" id="place"> ""</div>
+        <tbody >
+            <tr >
+               <div class="left">
+                    <span class="gray_20">Адрес</span>
+                    <br>
+                    <br>
+                      5300, град Габрово, 
+                    <br>
+                    <br>
+                    ул. Доктор Людвих Заменхов 8 
+                </div>
+                <div class="right">
+                    <span class="gray_20">Имейл за връзка</span>
+                    <br>
+                    <br>
+                    Дария Върбанова: 120093@students.ue-varna.bg, 
+                    <br>
+                    <br>
+                    Есра Рамадан: 120054@students.ue-varna.bg
+                    <br>
+                </div>
+            </tr>
+        </tbody>
+        <h1 class="contactstittle2">Свържете се с нас по имейл!</h1>
+        <form action="reservation" method="post" class="booking">
+            <div class="elem-group">
+              <label id= "forminfo" for="name">Име</label>
+              <input type="text" id="name" name="visitor_name" placeholder="Вашето име тук" pattern=[A-Z\sa-z\А-Я\а-я]{3,20} required>
+            </div>
+            <div class="elem-group">
+              <label id= "forminfo" for="email">Имейл</label>
+              <input type="email" id="email" name="visitor_email" placeholder="Вашият имейл тук" required>
+            </div>
+            <div class="elem-group">
+              <label id= "forminfo" for="phone">Телефонен номер</label>
+              <input type="tel" id="phone" name="visitor_phone" placeholder="Телефонен номер" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+            </div> 
+            <div class="elem-group">
+              <label id= "forminfo" for="message">Бележки</label>
+              <textarea id="inputData" name="visitor_message" placeholder="Бележки и допълнителни запитвания:"></textarea>
+            </div>
+            <button type="submit">Изпрати</button>
+          </form>   
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-content-brand">
+                    <a href="hotel.html" class="logo">
+                        <img src="./images/logo.png" class="logo-image" alt="">
+                    </a>
+                    <div class="footer-heading">
+                        <ul id="footer-nav">
+                            <li><a href="./hotel.html">Начало</a></li>
+                            <li><a href="./gallery.html">Галерия</a></li>
+                            <li><a href="./news.html">Новини</a></li>
+                            <li><a href="./contacts.html">Контакти</a></li>
+                            <li><a href="./booking.html">Резервация</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="social-media-wrap">
+                    <h4 class="footer-heading">Последвайте ни!</h4> 
+                    <ul id="social-media">
+                        <li><a href="https://www.twitter.com/"><img class="icon" src="./images/twitter.png" alt=""></a></li>
+                        <li><a href="https://facebook.com/"><img class="icon" src="./images/facebook.png" alt=""></a></li>
+                        <li><a href="https://www.instagram.com/"><img class="icon" src="./images/instagram.png" alt=""></a></li>
+                        <li><a href="https://mail.google.com/"><img class="icon" src="./images/email.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright"> 
+            <p>&copy;2023 - Апартаменти по наем Върбанови</p>
+        </div>
+    </footer>
+    <script src="hotel.js"></script>
+
+</body>
+</html>
